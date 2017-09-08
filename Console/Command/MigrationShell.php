@@ -926,8 +926,8 @@ class MigrationShell extends AppShell {
 		$file = $this->_findSchemaFile($folder, $schemaFiles, $name);
 
 		if ($type === 'app' && empty($file)) {
-			$appDir = preg_replace('/[^a-zA-Z0-9]/', '', APP_DIR);
-			$name = Inflector::camelize($appDir) . 'Schema';
+			//$appDir = preg_replace('/[^a-zA-Z0-9]/', '', APP_DIR);
+			//$name = Inflector::camelize($appDir) . 'Schema';
 			$file = $this->_getPath($type) . 'Config' . DS . 'Schema' . DS . 'schema.php';
 		}
 
